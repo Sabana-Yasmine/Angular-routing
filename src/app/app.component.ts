@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing';
+
+  isLogin : any = "false";
+
+  ngOnInit(){
+    this.isLogin = localStorage.getItem('login')
+  }
 }
