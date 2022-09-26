@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -8,13 +8,16 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router : Router ) { }
+  constructor( ) { }
 
   ngOnInit(): void {
+   
   }
 
-  goto(){
-    this.router.navigate(['/about',{name:'sabana'}])
+  logout(){
+    localStorage.setItem("login","false")
+    window.location.reload()
+   
   }
 
 }

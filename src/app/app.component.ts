@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {OnInit} from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
 
   isLogin : any = "false";
 
-  ngOnInit(){
-    this.isLogin = localStorage.getItem('login')
+ ngOnInit(){
+   this.isLogin = localStorage.getItem('login')
   }
 }

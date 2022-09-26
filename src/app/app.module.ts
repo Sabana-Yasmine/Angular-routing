@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { LogoutComponent } from './logout/logout.component';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { LoginComponent } from './login/login.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    LogoutComponent,
     LoginComponent
   ],
   imports: [

@@ -1,14 +1,6 @@
-<div *ngIf="isLogin=='true'; else elseblock">
+<div *ngIf="isLogin=='true';else logout">
     <app-navbar></app-navbar>
 </div>
-
-<ng-template #elseblock>
+<ng-template #logout>
     <app-login></app-login>
 </ng-template>
-   
-    
-    
-
-
-
-
